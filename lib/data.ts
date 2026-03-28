@@ -284,7 +284,7 @@ export const destinations: Destination[] = [
     description: "Premier tiger reserve, jeep safaris, ancient fort amidst wilderness.",
     bestTimeToVisit: "October to June", 
     attractions: ["Tiger Safari", "Ranthambore Fort", "Padam Lake", "Jogi Mahal", "Zone Safaris"],
-    image: "/images/dest-corbett.jpg", 
+    image: "/images/dest-wildlife.jpg", 
     mapUrl: "https://maps.google.com/?q=Ranthambore,India", 
     rating: 4.5, 
     reviewCount: 912,
@@ -749,10 +749,160 @@ export const transportOptions = [
 
 // ---- BLOG POSTS (unchanged) ----
 export const blogPosts: BlogPost[] = [
-  { id: "blog-1", title: "10 Essential Travel Tips", excerpt: "First-time tips.", content: "Digital docs, pack light, phrases...", category: "tips" as const, author: "Priya Sharma", date: "2026-01-15", image: "/images/dest-goa.jpg" },
-  { id: "blog-2", title: "Solo Safety Guide", excerpt: "Worry-free solo.", content: "Share itinerary, secure valuables...", category: "safety" as const, author: "Rahul Verma", date: "2026-01-22", image: "/images/dest-mountain.jpg" },
-  { id: "blog-3", title: "Packing Checklist", excerpt: "Never forget.", content: "Docs, clothes, toiletries...", category: "packing" as const, author: "Ananya Singh", date: "2026-02-01", image: "/images/dest-city.jpg" },
-  { id: "blog-4", title: "Cultural Etiquette", excerpt: "Respect traditions.", content: "Temples shoes off, Rajasthan photo consent...", category: "culture" as const, author: "Vikram Patel", date: "2026-02-05", image: "/images/dest-heritage.jpg" },
+  { 
+    id: "blog-1", 
+    title: "10 Essential Travel Tips for First-Time Travelers", 
+    excerpt: "Complete guide with practical advice for worry-free trips.", 
+    content: `Traveling for the first time? Here's your ultimate checklist!
+
+1. **Digital Documents**: Scan passport, visa, tickets, insurance. Email to yourself + cloud storage. Screenshot emergency contacts.
+
+2. **Pack Light**: 7kg carry-on max. Roll clothes, use packing cubes. Wear bulkiest items on flight.
+
+3. **Local Currency**: Exchange $50-100 cash. Use Wise/Revolut for cards (zero fees). Inform bank of travel.
+
+4. **SIM/eSIM**: Airalo or local SIM day 1. WhatsApp for all comms.
+
+5. **Apps**: Google Maps offline, Google Translate, XE currency, TripIt itinerary.
+
+6. **Power Bank**: 10,000mAh (under 100Wh for flights). India: Type C/D plugs.
+
+7. **Health**: Carry prescriptions, hand sanitizer, masks. Download vaccination cert.
+
+8. **Backup Plans**: Extra phone battery, photocopies. Share itinerary with family.
+
+9. **Phrases**: "Hello", "Thank you", "How much?", "Help", "Bathroom" in local language.
+
+10. **Stay Flexible**: Delays happen. Enjoy the journey!
+
+**Pro Tip**: Test everything 48hrs before departure. Safe travels! ✈️`,
+    category: "tips" as const, 
+    author: "Priya Sharma", 
+    date: "2026-01-15", 
+    image: "/images/dest-goa.jpg" 
+  },
+  { 
+    id: "blog-2", 
+    title: "Solo Female Traveler Safety Guide", 
+    excerpt: "Proven tips for safe and confident solo adventures.", 
+    content: `Solo travel = freedom! Here's how to stay safe:
+
+**Before Trip:**
+• Share full itinerary + hotel details with 2 trusted contacts
+• Emergency apps: bSafe, Red Panic Button (SOS)
+• Travel insurance w/ medical evacuation ($100k+)
+• Research local laws/customs (dress codes)
+
+**On Ground:**
+• Hotel: Confirm location via Google Maps, check reviews
+• Taxi: Uber/Ola only. Share live location
+• Valuables: Money belt, hotel safe. Fake wallet trick
+• Night: Well-lit main streets. Fake phone call technique
+
+**India Specific:**
+• Avoid isolated areas after dark
+• Respect local customs (cover shoulders/knees temples)
+• Groups safer for trains/night travel
+
+**Emergencies:**
+• India: 100 Police, 108 Ambulance
+• US Embassy: +91-11-2419-8000
+
+Confidence > fear. 90% travelers have zero issues. You've got this! 💪`,
+    category: "safety" as const, 
+    author: "Rahul Verma", 
+    date: "2026-01-22", 
+    image: "/images/dest-mountain.jpg" 
+  },
+  { 
+    id: "blog-3", 
+    title: "Ultimate Packing Checklist (7-10 Day Trip)", 
+    excerpt: "Never forget essentials again with this complete list.", 
+    content: `**Carry-on Only Packing (7kg max)**
+
+**Documents (Folder):**
+• Passport (valid 6+ months)
+• Visa/e-Visa printouts
+• Flight/hotel confirmations
+• Insurance policy
+• $100 cash + 2 cards
+
+**Clothes (1 week):**
+• 5 T-shirts/tops
+• 2 pants/jeans
+• 1 light jacket
+• 7 underwear/socks
+• 1 swimsuit
+• Sleepwear
+• Comfortable shoes + flip flops
+
+**Toiletries (100ml bottles):**
+• Toothbrush/paste
+• Deodorant
+• Sunscreen SPF50+
+• Moisturizer
+• Small soap/shampoo
+• Medicines (painkiller, motion sickness)
+
+**Electronics:**
+• Phone + charger
+• Power bank
+• Universal adapter
+• Earphones
+
+**India Must-haves:**
+• Mosquito repellent
+• Reusable water bottle
+• Scarf (temples/AC buses)
+• Wet wipes/hand sanitizer
+
+**Pro Tip**: Laundry everywhere in India (₹50/shirt). Pack versatile neutral colors.`,
+    category: "packing" as const, 
+    author: "Ananya Singh", 
+    date: "2026-02-01", 
+    image: "/images/dest-city.jpg" 
+  },
+  { 
+    id: "blog-4", 
+    title: "Indian Cultural Etiquette Every Traveler Must Know", 
+    excerpt: "Respect traditions, avoid faux pas, travel like local.", 
+    content: `**Essential Do's & Don'ts:**
+
+**Temples:**
+• Remove shoes (carry socks)
+• Cover shoulders/knees (scarf essential)
+• No leather items
+• Walk clockwise around shrines
+• Photography: Ask permission
+
+**Greetings:**
+• Namaste (palms together) > handshake
+• Elders first
+• Remove sunglasses indoors
+
+**Dining:**
+• Eat right hand only
+• Don't waste food (hospitality culture)
+• Accept offered food (refusing = rude)
+• No public eating/drinking while walking
+
+**Public:**
+• No PDA (kissing/hugging)
+• Pointing feet at people = disrespectful
+• Head wobble = yes/maybe
+• Bargain everywhere except fixed price
+
+**Regional:**
+• Rajasthan: Photo consent before clicking
+• Kerala: Left hand unclean (use right)
+• North: Haggle hard, South: Fixed prices
+
+Respect = richer experiences. Locals appreciate mindful travelers! 🙏`,
+    category: "culture" as const, 
+    author: "Vikram Patel", 
+    date: "2026-02-05", 
+    image: "/images/dest-heritage.jpg" 
+  },
 ]
 
 // ---- OFFERS (Added 2 intl) ----
@@ -777,8 +927,56 @@ export const faqs = [
 
 // ---- QUIZ (unchanged) ----
 export const quizQuestions = [
-  { id: 1, question: "Landscape?", options: [{ text: "Beaches", value: "beach" }, { text: "Mountains", value: "mountain" }, { text: "Cities", value: "city" }, { text: "Wildlife", value: "nature" }] },
-  // ... (same as original, truncated)
+  { 
+    id: 1, 
+    question: "What kind of landscapes excite you most?", 
+    options: [ 
+      { text: "Pristine beaches and oceans", value: "beach" }, 
+      { text: "Snow-capped mountains and adventure", value: "adventure" }, 
+      { text: "Vibrant cities and nightlife", value: "city" }, 
+      { text: "Lush forests and wildlife", value: "nature" } 
+    ] 
+  },
+  { 
+    id: 2, 
+    question: "What's your ideal travel pace?", 
+    options: [ 
+      { text: "Relaxed - beach lounging and unwinding", value: "beach" }, 
+      { text: "Active - trekking, rafting, paragliding", value: "adventure" }, 
+      { text: "Cultural - temples, history, local experiences", value: "heritage" }, 
+      { text: "Fast-paced - shopping, events, urban exploration", value: "city" } 
+    ] 
+  },
+  { 
+    id: 3, 
+    question: "What type of accommodation appeals to you?", 
+    options: [ 
+      { text: "Luxury resorts with spa and fine dining", value: "luxury" }, 
+      { text: "Nature camps or jungle lodges", value: "nature" }, 
+      { text: "Heritage havelis and boutique palaces", value: "heritage" }, 
+      { text: "Beach huts or modern apartments", value: "beach" } 
+    ] 
+  },
+  { 
+    id: 4, 
+    question: "Which activities excite you?", 
+    options: [ 
+      { text: "Wildlife safaris and nature walks", value: "nature" }, 
+      { text: "Night markets, clubs, and rooftop bars", value: "city" }, 
+      { text: "Fort visits, museums, and cultural shows", value: "heritage" }, 
+      { text: "Adventure sports like skiing or scuba", value: "adventure" } 
+    ] 
+  },
+  { 
+    id: 5, 
+    question: "Who do you prefer traveling with?", 
+    options: [ 
+      { text: "Solo or romantic couples getaway", value: "luxury" }, 
+      { text: "Family - comfortable and cultural", value: "heritage" }, 
+      { text: "Friends - adventure and parties", value: "adventure" }, 
+      { text: "Nature lovers group or solo reflection", value: "nature" } 
+    ] 
+  }
 ];
 
 export const personalityTypes: Record<string, { name: string; description: string; emoji: string; recommendedDestinations: string[] }> = {
